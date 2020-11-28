@@ -1,0 +1,18 @@
+.box-one{
+    padding: 10px 5px;
+    margin: 5px 10px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.box-details{
+    height: 300px;
+    width: 50%;
+    display: none;
+}
+
+.box-one + .box-one:hover{
+    background-color: pink;
+    color: white;
+    cursor: pointer;
+}
