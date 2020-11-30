@@ -8,11 +8,14 @@ body {
     margin: 0;
 }
 
-
 .main-header{
     background-color: #2ddf5c;
     width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
     padding: 8px 16px;
+    z-index: 1;
 }
 
 .main-header > div{
@@ -42,8 +45,6 @@ body {
     padding: 0;
     list-style: none;
 }
-
-
 
 .main-nav__item{
     display: inline-block;
