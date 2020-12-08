@@ -28,7 +28,9 @@
     color: white;
     font-family: 'Anton', sans-serif;
     position: absolute;
-    bottom: 0%;
+    bottom: 5%;
+    left: 3%;
+    width: 100%;
 }
 
 
@@ -131,5 +133,6 @@
     border-radius: 50%;
     height: 128px;
     margin: auto;
+    padding: 20px;
 }
 
