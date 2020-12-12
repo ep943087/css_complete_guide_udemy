@@ -8,20 +8,20 @@
 
 html {
   height: 100%;
-  overflow: hidden;
 }
 
 body {
+  height: 100%;
   font-family: "Montserrat", "Verdana", sans-serif;
   margin: 0;
-  height: 100%;
   overflow-x: hidden;
-  position: relative;
+  display: grid;
+  grid-template-rows: 3.5rem auto 8rem;
+  grid-template-areas: "header" "main" "footer";
 }
 
 main {
-  min-height: calc(100vh - 3.5rem - 8rem);
-  margin-top: 3.5rem;
+  grid-area: main;
 }
 
 body::-webkit-scrollbar {
@@ -134,9 +134,12 @@ body::-webkit-scrollbar {
 }
 
 .main-footer {
+  grid-area: footer;
   background: black;
-  padding: 32px;
-  margin-top: 48px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-footer ul{
@@ -147,6 +150,7 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .main-footer ul li{
