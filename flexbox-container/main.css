@@ -72,6 +72,7 @@ body {
   border: 5px solid black;
   margin: 10px;
   width: 350px;
+  flex-basis: 300px;
 }
 
 .item-6 {
