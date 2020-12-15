@@ -36,7 +36,6 @@ body {
   grid-gap: 5px;
   justify-content: center;
   align-content: center;
-  margin: 5px;
 }
 @media (max-width: 60rem) {
   body {

@@ -43,7 +43,6 @@ body{
     grid-gap: 5px;
     justify-content: center;
     align-content: center;
-    margin: 5px;
     @media(max-width: $small-screen){
         grid-template-columns: 1fr;
         grid-template-areas: "head" "main" "footer";

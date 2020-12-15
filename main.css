@@ -44,7 +44,6 @@ body {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin: 5px;
 }
 
 @media (max-width: 60rem) {
