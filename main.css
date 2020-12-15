@@ -11,6 +11,10 @@ html {
   overflow-x: hidden;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 h1 {
   color: #f64c72;
 }
@@ -22,6 +26,7 @@ h1 {
 }
 
 body {
+  position: relative;
   background-color: #99738e;
   font-family: monospace, sans-serif;
   height: 100%;
