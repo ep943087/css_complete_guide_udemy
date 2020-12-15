@@ -1,0 +1,7 @@
+$main-color: rgb(0,255,0);
+$second-color: lighten($main-color, 30%);
+$hover-color: green;
+
+$colors: (main: $main-color, second: $second-color, hover: $hover-color);
+
+$border-default: 0.05rem solid map-get($colors,main);

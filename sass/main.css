@@ -1,0 +1,113 @@
+.char-highlight {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: lime;
+}
+
+html {
+  font-size: 94.75%;
+}
+
+body {
+  border: 1rem solid black;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sass-section, .sass-introduction, .sass-details {
+  border: 0.05rem solid lime;
+  background: #99ff99;
+  padding: 2rem;
+  text-align: center;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
+          box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
+  width: 90%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sass-introduction {
+  -webkit-box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
+          box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
+}
+
+.sass-introduction p {
+  margin: 0;
+}
+
+.sass-details {
+  margin: 2rem 0;
+}
+
+.section-header {
+  border-bottom: 0.05rem solid lime;
+}
+
+.section-header h1 {
+  margin: 0 0 1rem 0;
+}
+
+.documentation-links {
+  list-style: none;
+  margin: 1rem 0 0 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.documentation-links li {
+  margin: 0.2rem 0;
+  background: white;
+}
+
+.documentation-links .documentation-link {
+  text-decoration: none;
+  color: lime;
+  display: block;
+  padding: 0.2rem;
+  border: 0.05rem solid lime;
+  /* connected to element instead of nested inside */
+}
+
+.documentation-links .documentation-link:hover, .documentation-links .documentation-link:active {
+  color: white;
+  background: green;
+  border-color: green;
+}
+
+@media (min-width: 40rem) {
+  html {
+    font-size: 125%;
+  }
+  .container {
+    padding: 3rem 0;
+  }
+  .sass-introduction,
+  .sass-details {
+    width: 30rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

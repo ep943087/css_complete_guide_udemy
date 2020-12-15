@@ -2,6 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:400,700&display=swap");
 
+:root{
+  --dark-green: #0e4f1f;
+  --highlight-color: #ff1b68;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -16,7 +21,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   display: grid;
-  grid-template-rows: 3.5rem auto 8rem;
+  grid-template-rows: 3.5rem auto fit-content(8rem);
   grid-template-areas: "header" "main" "footer";
 }
 
@@ -67,7 +72,7 @@ body::-webkit-scrollbar {
 }
 
 .main-header__brand{
-    color: #0e4f1f;
+    color: var(--dark-green);
     text-decoration: none;
     font-weight: bold;
     font-size: 1.375rem;
@@ -102,7 +107,7 @@ body::-webkit-scrollbar {
 .main-nav__item a,
 .mobile-nav__item a {
   text-decoration: none;
-  color: #0e4f1f;
+  color:var(--dark-green);
   font-weight: bold;
   padding: 3px;
 }
@@ -121,14 +126,14 @@ body::-webkit-scrollbar {
 .mobile-nav__item--cta a .mobile-nav__item--cta a,
 .mobile-nav__item--cta a {
   color: white;
-  background-color: #ff1b68;
+  background-color:var(--highlight-color);
   padding: 8px 16px;
   border-radius: 8px;
 }
 
 .main-nav__item--cta a:hover,
 .main-nav__item--cta a:active {
-  color: #ff1b68;
+  color: var(--highlight-color);
   background-color: white;
   border: none;
 }
@@ -136,7 +141,7 @@ body::-webkit-scrollbar {
 .main-footer {
   grid-area: footer;
   background: black;
-  padding: 0px;
+  padding: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,10 +174,10 @@ body::-webkit-scrollbar {
 }
 
 .button {
-  background: #0e4f1f;
+  background: var(--dark-green);
   color: white;
   font: inherit;
-  border: 1.5px solid #0e4f1f;
+  border: 1.5px solid var(--dark-green);
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
@@ -181,7 +186,7 @@ body::-webkit-scrollbar {
 
 .button:hover {
   background: white;
-  color: #0e4f1f;
+  color: var(--dark-green);
 }
 
 .button:focus {
@@ -265,8 +270,8 @@ body::-webkit-scrollbar {
     display: none;
   }
   
-
   
+
 
   .main-footer ul li {
     display: inline-block;
